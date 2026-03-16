@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(ls -la \"c:\\\\repos\\\\DinoIsland\\\\src\"\" 2>/dev/null | grep -E \"^d \")"
     ]
   }
 }

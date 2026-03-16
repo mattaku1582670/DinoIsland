@@ -12,6 +12,7 @@ const handleStartClick = (): void => {
   <div class="title-screen">
     <div class="title-screen__sky">
       <div class="title-screen__content">
+        <img class="title-screen__dino" src="/sprites/dino.svg" alt="きょうりゅう" />
         <h1 class="title-screen__logo">
           きょうりゅうの
           <span class="title-screen__logo-accent">しま</span>
@@ -58,6 +59,24 @@ const handleStartClick = (): void => {
 .title-screen__content {
   text-align: center;
   color: #ffffff;
+}
+
+.title-screen__dino {
+  width: 160px;
+  height: auto;
+  margin-bottom: 8px;
+  animation: dino-float 3s ease-in-out infinite;
+  filter: drop-shadow(0 8px 6px rgba(0, 0, 0, 0.18));
+}
+
+@keyframes dino-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
 }
 
 .title-screen__logo {
